@@ -18,8 +18,6 @@ async function bootstrap() {
     }),
   );
 
-  console.log('Hola mundo"!!')
-
   app.useGlobalFilters(new RpcCustomExceptionFilter());
 
   await app.listen(envs.port);
